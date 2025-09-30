@@ -8,6 +8,7 @@ import exercises.ex3.Impressora;
 import exercises.ex4.SistemaPagamento;
 import exercises.ex5.DiaSemana;
 import exercises.ex6.NivelPrioridade;
+import exercises.ex7.Moeda;
 
 public class Main {
 
@@ -50,6 +51,13 @@ public class Main {
 		System.out.println("Exercício 6.");
 		for (NivelPrioridade prioridade : NivelPrioridade.values()) {
             System.out.println(prioridade + ": " + prioridade.getPrioridade());
+        }
+		System.out.println("------------------------\n");
+		
+		System.out.println("Exercício 7.");
+		System.out.println("Conversões do real para: ");
+		for (Moeda moeda : Moeda.values()) {
+            System.out.println(moeda+ ": "+moeda.conversao(1)+".");
         }
 		System.out.println("------------------------\n");
 	}
