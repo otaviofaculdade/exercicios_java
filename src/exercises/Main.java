@@ -5,6 +5,7 @@ import exercises.ex1.Gerente;
 import exercises.ex2.Circulo;
 import exercises.ex2.Retangulo;
 import exercises.ex3.Impressora;
+import exercises.ex4.SistemaPagamento;
 import exercises.ex5.DiaSemana;
 
 public class Main {
@@ -35,6 +36,11 @@ public class Main {
 		System.out.println("------------------------\n");
 		
 		System.out.println("Exercício 4.");
+		SistemaPagamento pagamento = new SistemaPagamento();
+		pagamento.pagar();
+		System.out.println("------------------------\n");
+		
+		System.out.println("Exercício 5.");
 		for (DiaSemana dia : DiaSemana.values()) {
             System.out.println(dia + ": " + dia.getDescricao());
         }
