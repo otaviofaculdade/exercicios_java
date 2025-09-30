@@ -7,6 +7,7 @@ import exercises.ex2.Retangulo;
 import exercises.ex3.Impressora;
 import exercises.ex4.SistemaPagamento;
 import exercises.ex5.DiaSemana;
+import exercises.ex6.NivelPrioridade;
 
 public class Main {
 
@@ -43,6 +44,12 @@ public class Main {
 		System.out.println("Exercício 5.");
 		for (DiaSemana dia : DiaSemana.values()) {
             System.out.println(dia + ": " + dia.getDescricao());
+        }
+		System.out.println("------------------------\n");
+		
+		System.out.println("Exercício 6.");
+		for (NivelPrioridade prioridade : NivelPrioridade.values()) {
+            System.out.println(prioridade + ": " + prioridade.getPrioridade());
         }
 		System.out.println("------------------------\n");
 	}
