@@ -10,6 +10,7 @@ import exercises.ex5.DiaSemana;
 import exercises.ex6.NivelPrioridade;
 import exercises.ex7.Moeda;
 import exercises.ex8.Carro;
+import exercises.ex9.Computador;
 
 public class Main {
 
@@ -65,6 +66,11 @@ public class Main {
 		System.out.println("Exercício 8");
 		Carro carro = new Carro("Honda Civic", 50.00);
 		carro.mostrarPotenciaCarro();
+		System.out.println("------------------------\n");
+		
+		System.out.println("Exercício 9");
+		Computador computador = new Computador (128.00, "Intel I5 7200");
+		computador.mostrarInfos();
 		System.out.println("------------------------\n");
 	}
 }
