@@ -23,18 +23,18 @@ public class Projeto {
     }
 
     public void exibirProjeto() {
-        System.out.println("📁 Projeto: " + nome);
+        System.out.println("Projeto: " + nome);
 
-        System.out.println("\n👥 Membros da equipe:");
+        System.out.println("\nMembros da equipe:");
         for (MembroEquipe membro : membros) {
             System.out.print("- " + membro.getNome() + ": ");
             membro.trabalhar();
         }
 
-        System.out.println("\n📝 Tarefas:");
+        System.out.println("\nTarefas:");
         for (Tarefa tarefa : tarefas) {
             tarefa.mostrarTarefa();
-            System.out.println(); // linha em branco
+            System.out.println();
         }
     }
 }
